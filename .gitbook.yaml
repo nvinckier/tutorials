@@ -1,0 +1,8 @@
+root: ./docs/
+
+structure:  
+    readme: README.md  
+    summary: SUMMARY.md
+
+output:
+    css: ./docs/_files/styles.css
