@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Setup Instructions](./Instructions.md)
+* [Introduction](./Instructions.md)
