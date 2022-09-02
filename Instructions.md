@@ -46,3 +46,6 @@
     ```
     * The default web browser should open a page that looks like the image below:  
     ![](./images/auth.jpg)
+1. Click the appropriate username under Saved Username.
+1. A page should appear asking to Allow Access for the CLI. Click **Allow**.
+1. Check back in the terminal where a message should indicate the CLI has been authenticated.
