@@ -42,7 +42,7 @@
   
 1. Authenticate the CLI to allow it to access SFDC as your user profile:  
     ```bash
-    sfdx force:auth:web:login -a sfdc
+    sfdx auth:web:login -a sfdc
     ```
     * The default web browser should open a page that looks like the image below:  
     ![](./images/auth.jpg)
