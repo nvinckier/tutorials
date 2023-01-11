@@ -73,11 +73,11 @@ https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x
 
     ![](./images/running.jpg)
 
-1. Check Outlook to ensure phones hifts have been successfully imported:
+1. Check Outlook to ensure phone shifts have been successfully imported:
 
 ## Add category to Outlook Master Category List
 
-1. After the first import, the appointments will show in the default color for the given calendar. To set a new category and select a nuique color, right-click one of the appointments and select `Categorize > All Categories`:
+1. After the first import, the appointments will show in the default color for the given calendar. To set a new category and select a unique color, right-click one of the appointments and select `Categorize > All Categories`:
 
     ![](./images/added.jpg)
 
@@ -89,6 +89,6 @@ https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x
 
     ![](./images/category-color.jpg)
 
-1. All subsequent imports will identify existing apopintments in the `Get Shwifty` category, delete them, and then import existing ones from When I Work. It is possible to change this category name, but must be done so within the `add_phone_shifts_to_cal.ps1` script to match the category name in Outlook:
+1. All subsequent imports will identify existing appointments in the `Get Shwifty` category, delete them, and then import existing ones from When I Work. It is possible to change this category name, but must be done so within the `add_phone_shifts_to_cal.ps1` script to match the category name in Outlook:
 
     ![](./images/change-category.jpg)
