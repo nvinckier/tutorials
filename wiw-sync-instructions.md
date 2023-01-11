@@ -85,7 +85,7 @@ https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x
 
     ![](./images/add-category.jpg)
 
-1. Select the deired color fromt he dropdowna and click **OK**. Click **OK** on the `Color Categories` window to save the changes.
+1. Select the desired color from the dropdown and click **OK**. Click **OK** on the `Color Categories` window to save the changes.
 
     ![](./images/category-color.jpg)
 
