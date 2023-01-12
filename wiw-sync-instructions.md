@@ -40,7 +40,7 @@
 
 1. Download the `Phone Shift Update.xml` file from the link below:
 
-[Phone Shuft Update XML file](https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x)
+[Phone Shuft Update XML task file](https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x)
 
 1. Open the Windows **Task Scheduler** program:
 
