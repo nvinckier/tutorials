@@ -69,6 +69,8 @@ https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x
 
     ![](./images/run-task.jpg)
 
+***Note***: *Any existing phone shift appointments in Outlook that also exist in When I Work will be duplicated on the first import. If desired, first delete any existing phone shifts in Outlook prior to running the sync task.*
+
 1. A PowerShell window will open and show the message "" while the process runs. Once it is complete the window will disappear:
 
     ![](./images/running.jpg)
