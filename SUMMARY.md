@@ -1,5 +1,4 @@
 # Table of contents
 
-* [Salesforce CLI](./sfdx-instructions.md)
-* [When I Work Sync](./wiw-sync-instructions.md)
-
+* [Salesforce CLI](README.md)
+* [When I Work Sync](wiw-sync-instructions.md)
