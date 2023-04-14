@@ -1,5 +1,3 @@
-# 🏠
-
 ### Installing the CLI
 
 1.  Download the TAR file containing the latest stable release of the Salesforce CLI for Linux.
