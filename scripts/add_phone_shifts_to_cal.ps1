@@ -48,13 +48,13 @@ foreach ($i in $icsList ){
 	# echo $Body
 
 	$Start = ($data.getEnumerator() | ?{ $_.Name -eq "DTSTART"}).Value -replace "T" -replace "Z"
-	$Start = [datetime]::ParseExact($Start ,"yyyyMMddHHmmss" ,$null ).AddSeconds(-28800)
+	$Start = [datetime]::ParseExact($Start ,"yyyyMMddHHmmss" ,$null ).AddSeconds(-25200)
 
 	# Useful for debugging
 	# echo $Start
 
 	$End = ($data.getEnumerator() | ?{ $_.Name -eq "DTEND"}).Value -replace "T" -replace "Z"
-	$End = [datetime]::ParseExact($End ,"yyyyMMddHHmmss" ,$null ).AddSeconds(-28800)
+	$End = [datetime]::ParseExact($End ,"yyyyMMddHHmmss" ,$null ).AddSeconds(-25200)
 
 	# Useful for debugging
 	# echo $End
