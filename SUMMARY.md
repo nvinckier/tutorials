@@ -1,4 +1,4 @@
 # Table of contents
 
-* [ ](README.md)
+* [Salesforce CLI](README.md)
 * [When I Work Sync](wiw-sync-instructions.md)
