@@ -3,4 +3,3 @@
 * [Table of Contents](README.md)
 * [Salesforce CLI](./salesforce-cli-instructions.md)
 * [When I Work Sync](./wiw-sync-instructions.md)
-* [Illumina Knowledge Sync](./illumina-knowledge-export-instructions.md)
