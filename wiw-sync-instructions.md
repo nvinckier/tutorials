@@ -27,12 +27,12 @@
     * Modify the time to subtract according to the local time zone:
 
 
-    |Time Zone|Adjustment from UTC|
-    |:--:|:--:|
-    |Pacific|-28800|
-    |Mountain|-25200|
-    |Central|-21600|
-    |Eastern|-18000|
+    |Time Zone|Adjustment from UTC (Standard)|Adjustment from UTC (Daylight)|
+    |:--:|:--:|:--:|
+    |Pacific|-28800|-25200|
+    |Mountain|-25200|-21600|
+    |Central|-21600|-18000|
+    |Eastern|-18000|-14400|
 
 1. Save the script after making the above changes.
 
