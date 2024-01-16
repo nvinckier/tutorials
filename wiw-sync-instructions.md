@@ -1,7 +1,7 @@
 ## Configure PowerShell sync script
 1. Download the `add_phone_shifts_to_cal.ps1` script from the link below:
 
-    [WIW to Outlook sync script](https://illumina.box.com/s/4vvbcz4ii34bt0v70vq5b9pgafvjs0w1)
+    [WIW to Outlook sync script](https://ilmn-my.sharepoint.com/:u:/g/personal/nvinckier_illumina_com/EQdwF1yWJF9CiScUJKdMl7QBojRdrX1h_7sOKnzgOFSuyQ?e=Nz0hZo)
 
 1. Place the .ps1 script in the `C:\Users\%USERNAME%\Documents` directory.  
 
@@ -33,6 +33,7 @@
     |Mountain|-25200|-21600|
     |Central|-21600|-18000|
     |Eastern|-18000|-14400|
+    |São Paulo|-10800|NA|
 
 1. Save the script after making the above changes.
 
@@ -40,7 +41,7 @@
 
 1. Download the `Phone Shift Update.xml` file from the link below:
 
-    [Phone Shuft Update XML task file](https://illumina.box.com/s/dr1boyljuu94gu144cbel1r5w5y8ua8x)
+    [Phone Shuft Update XML task file](https://ilmn-my.sharepoint.com/:u:/g/personal/nvinckier_illumina_com/EfJ1PAH8UvtGhYW3yIeX8DgB1dYR8ToXkMjqwO8VqOt-aQ?e=fr3aPh)
 
 1. Open the Windows **Task Scheduler** program:
 
