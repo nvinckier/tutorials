@@ -1,58 +1,59 @@
 # Salesforce CLI
+Instructions for installing the Salesforce CLI tool within a Linux distribution running in WSL2 (Windows Subsystem for Linux).
 
+ 
 ### Installing the CLI
 
-1.  Download the TAR file containing the latest stable release of the Salesforce CLI for Linux.
+1.  Add the function below to ~/.bashrc (or another file that has been set up to  contain custom functions and is sourced when the terminal is opened e.g. ~/.bash_functions)
+    ```bash
+    function updateSfCli() {
+        rm -rf ~/bin/sf
+        mkdir -p ~/bin/sf
+        echo "Downloading latest sf cli tarball."
+        curl -sS -o ~/Downloads/sf-linux-x64.tar.xz 'https://developer.salesforce.com/media/salesforce-cli/sf/channels/stable/sf-linux-x64.tar.xz'
+        echo "Download complete."
+        echo "Expanding..."
+        tar xJf ~/Downloads/sf-linux-x64.tar.xz -C ~/bin/sf --strip-components 1
+        sf --version
+    }
+    ```
+2.  Add `~/bin/sf/bin` to your `$PATH` if it is not already. This can be accomplished by adding the following line to the `~/.bashrc` file.
 
     ```bash
-    wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
+    export PATH="$PATH:~/bin/sf/bin"
     ```
-2.  Create the directory where you want to install Salesforce CLI.
+5.  Source the file(s) containing the updateSfCli function and the `$PATH` variable update.
 
     ```bash
-    mkdir ~/sfdx
+    source ~/.bashrc
     ```
-3.  Unpack the contents for your TAR file:
-
-    * `-C` unpacks the contents in the `~/sfdx directory`, while `--strip-components 1` removes the root path component.
+6.  Execute the update function.
 
     ```bash
-    tar xJf sfdx-linux-x64.tar.xz -C ~/sfdx --strip-components 1
+    updateSfCli
     ```
-4.  Update your PATH environment variable to include the Salesforce CLI bin directory. For example, to set it for your current terminal session:
+7.  The version of the CLI tool should be printed in the terminal when the function completes.
 
     ```bash
-    export PATH=~/sfdx/bin:$PATH
+    Downloading latest sf cli tarball.
+    Download complete.
+    Expanding...
+    @salesforce/cli/2.46.6 wsl-x64 node-v20.14.0
     ```
-5.  To update your PATH environment variable permanently, add the appropriate entry to your shell’s configuration file. For example, if you use the Bash shell, add this line to your `~/.bashrc` or `~/.bash_profile` file:
-
-    ```bash
-    PATH=~/sfdx/bin:$PATH
-    export PATH
-    ```
-6.  Verify the installation:
-
-    ```bash
-    sfdx --version
-    ```
-7.  Something like this should print to the terminal.
-
-    ```bash
-    sfdx-cli/7.74.1-32db2396ed wsl-x64 node-v12.18.3
-    ```
-
+8.  The CLI can now be updated by re-running the `updateSfCli` function.
+    
 ### Authenticating the CLI
 
 1. Close any open Bash (Linux) sessions and open a new one.
 2. Log into SFDC as normal in the default web browser.
-3.  Authenticate the CLI to allow it to access SFDC as your user profile:
-
+3. Run the command below to start the CLI authentication process:
     ```bash
-    sfdx auth:web:login -a sfdc
+    sf org login device -r https://illumina.my.salesforce.com -a sfdc
     ```
 
-    * The default web browser should open a page that looks like the image below:\
-      ![](images/auth.jpg)
-4. Click the appropriate username under Saved Username.
+    * A code and URL will be printed in the terminal. Copy the code and navigate to the URL provided.
+    * Enter the code in the Code box and that is presented on the web page:  
+      ![](images/auth.png)
+4. Click Connect.
 5. A page should appear asking to Allow Access for the CLI. Click **Allow**.
 6. Check back in the terminal where a message should indicate the CLI has been authenticated.
