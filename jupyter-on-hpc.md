@@ -1,6 +1,9 @@
-
 # Jupyter on HPC
 Instructions for setting up a python environment to run Jupyter on the HPC as a scheduled job and connect via local web browser.
+
+1. Download the `qsub-jupyter.sh` script from the link below:
+
+	[SGE jupyter job script](https://ilmn-my.sharepoint.com/:u:/g/personal/nvinckier_illumina_com/EY3i05RgbtZIst1RNMIuK0UB0TYnJG7QbGNminsL2pm6dg?e=bw3XS5).
 
 ### Set up Python virtual environment
 
