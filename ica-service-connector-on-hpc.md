@@ -9,7 +9,7 @@ Instructions for running an ICA Service Connector as a scheduled job on the HPC.
 
 1. Log into the HPC via the `ussd-rnd` head node.
 ```bash
-ssh {username}@ussd-rnd
+ssh ${USER}@ussd-rnd
 ```
 Alternative login hosts:
 `ussd-prd-rdln03`
