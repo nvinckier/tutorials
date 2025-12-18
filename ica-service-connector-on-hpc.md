@@ -7,7 +7,7 @@ Instructions for running an ICA Service Connector as a scheduled job on the HPC.
 
 ### Install the connector
 
-1. Log into the HPC via the `ussd-rnd` head node.
+2. Log into the HPC via the `ussd-rnd` head node.
 ```bash
 ssh ${USER}@ussd-rnd
 ```
@@ -15,15 +15,15 @@ Alternative login hosts:
 `ussd-prd-rdln03`
 `ussd-prd-rdln04`
 
-1. Create install directory and upload/download directories as needed for the connector to be run. See the example below.
+3. Create install directory and upload/download directories as needed for the connector to be run. See the example below.
 ```bash
 mkdir -p /illumina-sdcolo-01/scratch/EIBU-CS/${USER}/ica/{connector,downloads,uploads}
 ```
-1. Follow the instructions on [this page](https://help.ica.illumina.com/project/p-connectivity/service-connector#creating-a-new-connector) to create and install the connector. Be sure to run the installer in headless mode with the command below.
+4. Follow the instructions on [this page](https://help.ica.illumina.com/project/p-connectivity/service-connector#creating-a-new-connector) to create and install the connector. Be sure to run the installer in headless mode with the command below.
 ```bash
 bash illumina_unix_develop.sh -c
 ```
-1. When asked, provide the desired install location, such as from the example folders created above: 
+5. When asked, provide the desired install location, such as from the example folders created above: 
 ```bash
 /illumina-sdcolo-01/scratch/EIBU-CS/${USER}/ica/connector
 ```
@@ -34,7 +34,7 @@ bash illumina_unix_develop.sh -c
 ```bash
 qsub qsub-connector.sh
 ```
-1. Verify the job is running. The `state` should show as `r` a minute or two after submitting the job.
+2. Verify the job is running. The `state` should show as `r` a minute or two after submitting the job.
 ```bash
 qstat -u ${USER}
 ```
