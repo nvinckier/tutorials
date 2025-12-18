@@ -7,7 +7,7 @@ Instructions for running an ICA Service Connector as a scheduled job on the HPC.
 
 ### Install the connector
 
-2. Log into the HPC via the `ussd-rnd` head node.
+1. Log into the HPC via the `ussd-rnd` head node.
 ```bash
 ssh ${USER}@ussd-rnd
 ```
@@ -15,15 +15,15 @@ Alternative login hosts:
 `ussd-prd-rdln03`
 `ussd-prd-rdln04`
 
-3. Create install directory and upload/download directories as needed for the connector to be run. See the example below.
+2. Create install directory and upload/download directories as needed for the connector to be run. See the example below.
 ```bash
 mkdir -p /illumina-sdcolo-01/scratch/EIBU-CS/${USER}/ica/{connector,downloads,uploads}
 ```
-4. Follow the instructions on [this page](https://help.ica.illumina.com/project/p-connectivity/service-connector#creating-a-new-connector) to create and install the connector. Be sure to run the installer in headless mode with the command below.
+3. Follow the instructions on [this page](https://help.ica.illumina.com/project/p-connectivity/service-connector#creating-a-new-connector) to create and install the connector. Be sure to run the installer in headless mode with the command below.
 ```bash
 bash illumina_unix_develop.sh -c
 ```
-5. When asked, provide the desired install location, such as from the example folders created above: 
+4. When asked, provide the desired install location, such as from the example folders created above: 
 ```bash
 /illumina-sdcolo-01/scratch/EIBU-CS/${USER}/ica/connector
 ```
