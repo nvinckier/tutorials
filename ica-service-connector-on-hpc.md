@@ -3,7 +3,7 @@ Instructions for running an ICA Service Connector as a scheduled job on the HPC.
 
 1. Download the `qsub-connector.sh` script from the link below:
 
-	[SGE connector job script](https://ilmn-my.sharepoint.com/:u:/g/personal/nvinckier_illumina_com/EY3i05RgbtZIst1RNMIuK0UB0TYnJG7QbGNminsL2pm6dg?e=bw3XS5).
+	[SGE connector job script](https://ilmn-my.sharepoint.com/:u:/g/personal/nvinckier_illumina_com/IQBQbH5cO8-HRY_PefjRT_TkAWpumvGZSPhgQGUTZoVzWjg?e=XcXwcz).
 
 ### Install the connector
 
