@@ -33,11 +33,12 @@ bash illumina_unix_develop.sh -c
 
 1. Submit the job script to the scheduler.
 ```bash
+sbatch sbatch-connector.sh    # For Slurm systems
 qsub qsub-connector.sh             # For SGE systems
-sbatch qsub sbatch-connector.sh    # For Slurm systems
 ```
-2. Verify the job is running. The `state` should show as `r` a minute or two after submitting the job.
+2. Verify the job is running. The `state` should show as `R` (or `r` for SGE) a minute or two after submitting the job.
 ```bash
+squeue -u ${USER}
 qstat -u ${USER}
 ```
  The connector should stay running indefinitely, but may need an occasional restart. For example, if the HPC needs to stop jobs for maintenance, or an update to the service connector infrastructure requires a connector restart.
