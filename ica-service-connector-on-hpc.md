@@ -33,7 +33,8 @@ bash illumina_unix_develop.sh -c
 
 1. Submit the job script to the scheduler.
 ```bash
-qsub qsub-connector.sh
+qsub qsub-connector.sh             # For SGE systems
+sbatch qsub sbatch-connector.sh    # For Slurm systems
 ```
 2. Verify the job is running. The `state` should show as `r` a minute or two after submitting the job.
 ```bash
